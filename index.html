@@ -124,6 +124,11 @@
         </footer>
 </body>
 <script language="javascript">
+        $(document).ready(function () {
+                        $(".mySlides").hide(0).delay(500).fadeIn(3000)
+                });
+</script>
+<script language="javascript">
                 var currentSlide = 0;
                 function prevSlide() {
                         if(currentSlide === 0) {
@@ -149,7 +154,6 @@
                         for (let i = 0; i < mySlides.length; i++) {
                                 mySlides[i].style.display = "none";
                         }
-                        mySlides[currentSlide].fadeIn();
                         mySlides[currentSlide].style.display = "block";
                 }
                 showSlides(currentSlide);

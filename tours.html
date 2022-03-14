@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0" >
+        <title> Tours  </title>
+        <link rel="icon" href="candy cane.png">
+        <meta name="keywords" content="Candy, candy, shop, store, online shopping, hard candy, chocolate">
+        <link rel="stylesheet" media="(max-width: 1000px)" href="smallstyle.css">
+        <link rel="stylesheet" media="(min-width: 1001px)" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="banner">
+            <h1>
+                <a href="index.html"><img src="candy_logo.png" height="180px" width="180px"></a>
+            </h1>
+        </div>
+        <div class="nav">
+            <div class="menu">
+                <a href="shop.html">Order</a>
+            </div>
+            <div class="about">
+                <a href="CandyAbout.html">About Us</a>
+            </div>
+            <div class="contact">
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="products">
+                <a href="products.html">Products</a>
+            </div>
+            <div class="tours">
+                <a href="tours.html">Tours</a>
+            </div>
+            <div class="catering">
+                <a href="catering.html">Catering</a>
+            </div>
+            <div id="mobileLinks">
+                <a href="shop.html">Order</a>
+                <a href="CandyAbout.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="products.html">Products</a>
+                <a href="tours.html">Tours</a>
+                <a href="catering.html">Catering</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <section>
+            <h1> 
+                Tours 
+            </h1>
+            <h2> A trip to Billy Bonka's Candy Shop can be described as magical. On this tour, you will see the following: </p>
+            <h3>Our Shop</h3>
+            <img src="images/candy.jpg">
+            <h3>Where we make our goods</h3>
+            <img src="images/Candy-Factory-Tours-Jelly-Belly-2.jpg">
+            <h3>Sampling of new and unique flavors and candy</h3>
+            <img src="images/new-flav.jpg">
+            <h3> Please fill out the form below if you want to come on a magic journey!</h3>
+
+            <form name="form">
+                Name: <input type = "string" id="Name">
+                <br/>
+                Guest Amount: <input type = "number" id="Guests">
+                <br/>
+                Email: <input type = "string" id="Email">
+                <br/>
+                Ideal Date: <input type = "string" id="Dates">
+                <br/>
+                Time Preference: <input type = "string" id="Time">
+                <br/>
+                <input type ="button" value="Submit" onclick = "SendInfo(Name, Guests, Email, Dates, Time)" >
+            </form>
+
+        </section>
+        
+        <script language = "javascript">
+            function SendInfo(){
+                let names = document.getElementById('Name').value;
+                let guests = document.getElementById('Guests').value;
+                let email = document.getElementById('Email').value;
+                let date = document.getElementById('Dates').value;
+                let time = document.getElementById('Time').value;
+
+                if (name == "" || guests == "" ||email == "" ||date == "" ||time == "" ){
+                   alert("Fill in missing values please");
+                } else{
+                    alert("We hope to speak to you soon!")
+                    form.close();
+                }
+                
+            
+            }
+
+
+
+        
+        
+        </script>
+
+
+        <footer class="footer">
+            Contact us at 123-456-7890, or WillyBonka@WillyBonka.com!
+        </footer>
+    </body>
+
+
+
+</html>

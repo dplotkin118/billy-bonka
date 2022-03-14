@@ -124,6 +124,11 @@
                 Contact us at 123-456-7890, or WillyBonka@WillyBonka.com!
         </footer>
 </body>
+<script language="javascript">
+        $(document).ready(function () {
+                        $("h2").hide(0).delay(500).fadeIn(3000)
+                });
+</script>
 
 <script language="javascript">
                 var currentSlide = 0;
@@ -151,8 +156,7 @@
                         for (let i = 0; i < mySlides.length; i++) {
                                 mySlides[i].style.display = "none";
                         }
-                        mySlides[currentSlide].fadeIn();
-                        // .style.display = "block";
+                        mySlides[currentSlide].style.display = "block";
                 }
                 showSlides(currentSlide);
 </script>

@@ -72,7 +72,7 @@
                 <br/>
                 Time Preference: <input type = "string" id="Time">
                 <br/>
-                <input type ="button" value="Submit" onclick = "SendInfo(Name, Guests, Email, Dates, Time)" >
+                <input type ="button" value="Submit" onclick = "SendInfo()" >
             </form>
 
         </section>
@@ -84,6 +84,7 @@
                 let email = document.getElementById('Email').value;
                 let date = document.getElementById('Dates').value;
                 let time = document.getElementById('Time').value;
+                
 
                 if (name == "" || guests == "" ||email == "" ||date == "" ||time == "" ){
                    alert("Fill in missing values please");

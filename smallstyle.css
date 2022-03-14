@@ -48,7 +48,7 @@ div.nav a {
 }
 div.nav a:hover{
         background-color: #ddd;
-        color: black;
+        /* color: black; */
 }
 
 div.nav a.icon {
